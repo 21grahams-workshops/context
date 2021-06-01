@@ -2,7 +2,7 @@ import React, { useState, createContext } from "react";
 
 export const LanguageContext = createContext();
 
-export function LanguageProvider(props) {
+export const LanguageProvider = props => {
   const [language, setLanguage] = useState("english");
   const changeLanguage = (e) => setLanguage(e.target.value);
   return (

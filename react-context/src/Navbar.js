@@ -26,7 +26,7 @@ const content = {
   },
 };
 
-function Navbar(props) {
+const Navbar = props => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
   const { classes } = props;
